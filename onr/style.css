@@ -1,0 +1,184 @@
+
+    .nav {
+        width: 100%;
+        background: #348;
+        color: #fff;
+    }
+    .nav .logo {
+        height: 60px;
+        width: 90%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         gap: 12px;
+    }
+    .nav .logo img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .nav .logo .menu-btn {
+        outline: none;
+        border: none;
+        background: none;
+        padding:  5px;
+        color: #fff;
+        border-radius: 3px ;
+        cursor: pointer;
+    }
+    .nav .list {
+        display: none;
+        transition: all .4s;
+        list-style: none;
+         background: transparent
+
+    }
+    .nav .list li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 15px;
+        display: block;
+        transition: all .4s;
+        width: 100%;
+        font-size: 18px;
+        
+    }
+    .nav ul li a:hover {
+        background:rgba(255, 255, 255, .2);
+       
+    }
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background: #2d6cdf;
+            color: white;
+            cursor: pointer;
+            padding: 12px 18px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: background 0.2s;
+        }
+        #backToTop:hover {
+            background: #1b4e9b;
+        }
+
+    .footer-cotainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #232946;
+    color: #fff;
+    padding: 40px 5vw 20px 5vw;
+    gap: 32px;
+    margin-top: 40px;
+    border-radius: 12px 12px 0 0;
+}
+
+.footer-cotainer .box {
+    flex: 1 1 180px;
+    min-width: 180px;
+    margin: 0 12px;
+}
+
+.footer-cotainer h3 {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: #eebbc3;
+    letter-spacing: 1px;
+}
+
+.footer-cotainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.footer-cotainer ul li {
+    margin-bottom: 8px;
+}
+
+.footer-cotainer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.97rem;
+}
+
+.footer-cotainer ul li a:hover {
+    color: #eebbc3;
+    text-decoration: underline;
+}
+
+.footer-cotainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-cotainer input[type="email"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer-cotainer input[type="submit"] {
+    background: #eebbc3;
+    color: #232946;
+    border: none;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer-cotainer input[type="submit"]:hover {
+    background: #fff;
+    color: #232946;
+}
+
+.footer-cotainer form p {
+    margin: 8px 0 0 0;
+    font-size: 0.95rem;
+    color: #b8c1ec;
+}
+
+.niique-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 24px 0;
+}
+
+.niique-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d6cdf;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(45,108,223,0.12);
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.niique-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #232946;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}

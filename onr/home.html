@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <!-- Simple Logo for Niique Technologies -->
+<div class="niique-logo">
+    <span class="niique-icon">N</span>
+    <span class="niique-name">Niique <span style="font-weight:300;">Technologies</span></span>
+</div>
+    <nav class="nav">
+            <div class="logo">
+                <img src="adorable-kittens-with-fuzzy-hair-sitting-white-surface-with-two-guinea-pigs.jpg" alt="logo">
+                <h2>NIIQUE TECHNOLOGIES CO. L.T.D</h2> 
+                <button class="menu-btn" onclick="openMenu(this)">Menu</button>
+            </div>
+                <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="buy.html">Buy Extra</a></li>
+                </ul>
+    </nav>
+    
+    
+    <div class="footer-cotainer">
+        <div class="box">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="">Help</a></li>
+                <li><a href="">Status</a></li>
+                <li><a href="">Contact Support</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Support</h3>
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Trending</h3>
+            <ul>
+                       <li><a href="#">Shop</a></li>
+                    <li><a href="#">Portfolio</a></li> 
+                    <li><a href="#">Blog</a></li>
+    
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Get to know us</h3>
+            <ul>
+                       <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Agency</a></li> 
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="">Commerce</a></li>
+    
+            </ul>
+        </div>
+        <div class="box">
+            <h3>News Letter</h3>
+            <form action="">
+                <input type="email" placeholder="Enter your email" required>
+                <input type="submit" value="subscribe">
+                <p>Get the latest offers</p>
+            </form>
+        </div>
+    </div>
+    <footer style="text-align:center; background:#222; color:#fff; padding:16px 0; margin-top:24px;">
+    &copy; 2025 NIIQUE TECHNOLOGIES CO. L.T.D. All rights reserved.
+</footer>
+    
+
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">↑ Top</button>
+</body>
+<script>
+    function openMenu(e) {
+        var menuList = document.querySelector(".nav .list");
+        if (e.innerHTML == "Menu") {
+            e.innerHTML = "close";
+            menuList.style.display = "block";
+        } else {
+            e.innerHTML = "Menu";
+            menuList.style.display = "none";  
+        }
+    }
+
+      
+
+    
+        function openMenu(e) {
+            var menuList = document.querySelector(".nav .list");
+            if (e.innerHTML == "Menu") {
+                e.innerHTML = "close";
+                menuList.style.display = "block";
+            } else {
+                e.innerHTML = "Menu";
+                menuList.style.display = "none";  
+            }
+        }
+
+        // Show/hide back-to-top button
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            var btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+               }
+
+        // Scroll to top when button is clicked
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+</script>
+</html>
+

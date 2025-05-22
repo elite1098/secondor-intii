@@ -1,0 +1,137 @@
+/* index.css: Advanced, professional style for index.html only */
+
+.index-bg {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #232946;
+    min-height: 100vh;
+    position: relative;
+}
+
+.index-bg::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(35, 41, 70, 0.82); /* overlay for readability */
+    z-index: 0;
+}
+
+.index-header, .index-header * {
+    position: relative;
+    z-index: 1;
+}
+
+.index-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.index-header .index-text {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(45,108,223,0.10);
+    backdrop-filter: blur(2px);
+}
+
+.index-header h1 {
+    margin: 0 0 18px 0;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(45,108,223,0.20);
+}
+
+.index-header p {
+    margin: 0 0 32px 0;
+    font-size: 1.18rem;
+    color: #eebbc3;
+    line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(35,41,70,0.18);
+}
+
+.index-header .index-btns {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.index-header .index-btns button {
+    background: #eebbc3;
+    color: #232946;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(45,108,223,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.index-header .index-btns button:hover {
+    background: #fff;
+    color: #2d6cdf;
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 700px) {
+    .index-header .index-text {
+        padding: 24px 6vw;
+    }
+    .index-header h1 {
+        font-size: 1.5rem;
+    }
+    .index-header .index-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.niique-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 24px 0;
+}
+
+.niique-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d6cdf;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(45,108,223,0.12);
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.niique-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #232946;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
